@@ -28,14 +28,19 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I'm a Ph.D. student at Seoul National University, <a href='https://cse.snu.ac.kr/'>Department of Computer Science and Engineering</a>.
+I'm a Ph.D. student in the <a href='https://cse.snu.ac.kr/'>Department of Computer Science and Engineering</a> at Seoul National University,
+advised by <a href='https://sf.snu.ac.kr/gil.hur/'>Prof. Chung-Kil Hur</a>.
+
+My research interests lie in *formal reasoning* of concurrent programs and *relaxed memory consistency models*.
+I have been working on verifying concurrent libraries (e.g., concurrent garbage collectors and lock-free data structures)
+using the <a href='https://iris-project.org/'>Iris</a>-based <a href='https://github.com/kaist-cp/relaxed-memory-separation-logic'>iRC11</a> relaxed memory separation logic for the C/C++ relaxed memory model.
 
 <h2><a id="contact">Contact</a></h2>
 
 * Email: sunho.park [at] sf.snu.ac.kr
 * GitHub: <a href='https://github.com/park-sunho'>park-sunho</a>
 * Bibliography: <a href='https://orcid.org/0009-0000-5380-1969'>ORCID</a>, <a href='https://scholar.google.com/citations?user=tWPkTPEAAAAJ'>Google Scholar</a>
-* Address: Room 315-1, Building 302, 1 Gwanak-ro, Gwanak-gu, Seoul, Korea (PO. 08826)
+* Address: Room 315-1, Building 302, 1 Gwanak-ro, Gwanak-gu, Seoul, Korea
 
 <h2><a id="education">Education</a></h2>
 
@@ -43,8 +48,8 @@ I'm a Ph.D. student at Seoul National University, <a href='https://cse.snu.ac.kr
     * Advised by <a href='https://sf.snu.ac.kr/gil.hur/'>Prof. Chung-Kil Hur</a>
 * M.S. in Computer Science, KAIST, 2024 - 2026
     * Advised by <a href='https://cp.kaist.ac.kr/jeehoon.kang/'>Prof. Jeehoon Kang</a>
-* B.S. in Computer Science, KASIT, 2020 - 2024
+* B.S. in Computer Science, KAIST, 2020 - 2024
 
-<h2><a id="service">Academic Services</a></h2>
+<h2><a id="service">Academic Service</a></h2>
 
 * Student volunteer co-chair: <a href='https://pldi25.sigplan.org'>PLDI'25</a>, <a href='https://pldi26.sigplan.org'>PLDI'26</a>
