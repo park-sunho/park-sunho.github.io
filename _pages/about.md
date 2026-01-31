@@ -30,7 +30,6 @@ latest_posts:
 
 I'm a Ph.D. student at Seoul National University, <a href='https://cse.snu.ac.kr/'>Department of Computer Science and Engineering</a>.
 
-<br />
 <h2><a id="education">Education</a></h2>
 
 * Ph.D. in Computer Science, Seoul National University, 2026 - Present
@@ -39,7 +38,6 @@ I'm a Ph.D. student at Seoul National University, <a href='https://cse.snu.ac.kr
     * Advised by <a href='https://cp.kaist.ac.kr/jeehoon.kang/'>Prof. Jeehoon Kang</a>
 * B.S. in Computer Science, KASIT, 2020 - 2024
 
-<br />
 <h2><a id="service">Academic Services</a></h2>
 
 * Student volunteer co-chair: <a href='https://pldi25.sigplan.org'>PLDI'25</a>, <a href='https://pldi26.sigplan.org'>PLDI'26</a>

@@ -1,46 +1,6 @@
 ---
 ---
 
-@article{10.1145/3622827,
-author = {Jung, Jaehwang and Lee, Janggun and Choi, Jaemin and Kim, Jaewoo and Park, Sunho and Kang, Jeehoon},
-title = {Modular Verification of Safe Memory Reclamation in Concurrent Separation Logic},
-year = {2023},
-issue_date = {October 2023},
-publisher = {Association for Computing Machinery},
-address = {New York, NY, USA},
-volume = {7},
-number = {OOPSLA2},
-url = {https://doi.org/10.1145/3622827},
-doi = {10.1145/3622827},
-abstract = {Formal verification is an effective method to address the challenge of designing correct and efficient concurrent data structures. But verification efforts often ignore memory reclamation, which involves nontrivial synchronization between concurrent accesses and reclamation. When incorrectly implemented, it may lead to critical safety errors such as use-after-free and the ABA problem. Semi-automatic safe memory reclamation schemes such as hazard pointers and RCU encapsulate the complexity of manual memory management in modular interfaces. However, this modularity has not been carried over to formal verification. We propose modular specifications of hazard pointers and RCU, and formally verify realistic implementations of them in concurrent separation logic. Specifically, we design abstract predicates for hazard pointers that capture the meaning of validating the protection of nodes, and those for RCU that support optimistic traversal to possibly retired nodes. We demonstrate that the specifications indeed facilitate modular verification in three criteria: compositional verification, general applicability, and easy integration. In doing so, we present the first formal verification of Harris’s list, the Harris-Michael list, the Chase-Lev deque, and RDCSS with reclamation. We report the Coq mechanization of all our results in the Iris separation logic framework.},
-journal = {Proc. ACM Program. Lang.},
-month = oct,
-articleno = {251},
-numpages = {29},
-keywords = {Iris, safe memory reclamation, separation logic},
-selected = {true}
-}
-
-@article{10.1145/3656384,
-author = {Park, Sunho and Kim, Jaewoo and Mulder, Ike and Jung, Jaehwang and Lee, Janggun and Krebbers, Robbert and Kang, Jeehoon},
-title = {A Proof Recipe for Linearizability in Relaxed Memory Separation Logic},
-year = {2024},
-issue_date = {June 2024},
-publisher = {Association for Computing Machinery},
-address = {New York, NY, USA},
-volume = {8},
-number = {PLDI},
-url = {https://doi.org/10.1145/3656384},
-doi = {10.1145/3656384},
-abstract = {Linearizability is the de facto standard for correctness of concurrent objects–it essentially says that all the object’s operations behave as if they were atomic. There have been a number of recent advances in developing increasingly strong linearizability specifications for relaxed memory consistency (RMC), but scalable proof methods for these specifications do not exist due to the challenges arising from out-of-order executions (requiring event reordering) and selected synchronization (requiring tracking of view transfers).We propose a proof recipe for the linearizable history specifications by Dang et al. in the Iris-based iRC11 concurrent separation logic in Coq. Key to our proof recipe is the notion of object modification order (OMO), which generalizes the modification order of the C11 memory model to an object-local setting. Using OMO we minimize the conditions that need to be proved for event reordering. To enable proof reuse for concurrent libraries that are built on top of others, OMO provides the novel notion of a commit-with relation that connects the linearization points of the lower and upper libraries. Using our recipe, we verify the linearizability of the Michael–Scott queue, the elimination stack, and Folly’s MPMC queue in RMC for the first time; and verify stronger specifications of a spinlock and atomic reference counting in RMC than prior work.},
-journal = {Proc. ACM Program. Lang.},
-month = jun,
-articleno = {154},
-numpages = {24},
-keywords = {linearizability, relaxed memory, separation logic, automation},
-selected = {true}
-}
-
 @article{10.1145/3729248,
 author = {Park, Sunho and Jung, Jaehwang and Lee, Janggun and Kang, Jeehoon},
 title = {Verifying Lock-Free Traversals in Relaxed Memory Separation Logic},
@@ -78,5 +38,45 @@ month = jun,
 articleno = {147},
 numpages = {25},
 keywords = {Read-Copy-Update, relaxed memory, separation logic},
+selected = {true}
+}
+
+@article{10.1145/3656384,
+author = {Park, Sunho and Kim, Jaewoo and Mulder, Ike and Jung, Jaehwang and Lee, Janggun and Krebbers, Robbert and Kang, Jeehoon},
+title = {A Proof Recipe for Linearizability in Relaxed Memory Separation Logic},
+year = {2024},
+issue_date = {June 2024},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {8},
+number = {PLDI},
+url = {https://doi.org/10.1145/3656384},
+doi = {10.1145/3656384},
+abstract = {Linearizability is the de facto standard for correctness of concurrent objects–it essentially says that all the object’s operations behave as if they were atomic. There have been a number of recent advances in developing increasingly strong linearizability specifications for relaxed memory consistency (RMC), but scalable proof methods for these specifications do not exist due to the challenges arising from out-of-order executions (requiring event reordering) and selected synchronization (requiring tracking of view transfers).We propose a proof recipe for the linearizable history specifications by Dang et al. in the Iris-based iRC11 concurrent separation logic in Coq. Key to our proof recipe is the notion of object modification order (OMO), which generalizes the modification order of the C11 memory model to an object-local setting. Using OMO we minimize the conditions that need to be proved for event reordering. To enable proof reuse for concurrent libraries that are built on top of others, OMO provides the novel notion of a commit-with relation that connects the linearization points of the lower and upper libraries. Using our recipe, we verify the linearizability of the Michael–Scott queue, the elimination stack, and Folly’s MPMC queue in RMC for the first time; and verify stronger specifications of a spinlock and atomic reference counting in RMC than prior work.},
+journal = {Proc. ACM Program. Lang.},
+month = jun,
+articleno = {154},
+numpages = {24},
+keywords = {linearizability, relaxed memory, separation logic, automation},
+selected = {true}
+}
+
+@article{10.1145/3622827,
+author = {Jung, Jaehwang and Lee, Janggun and Choi, Jaemin and Kim, Jaewoo and Park, Sunho and Kang, Jeehoon},
+title = {Modular Verification of Safe Memory Reclamation in Concurrent Separation Logic},
+year = {2023},
+issue_date = {October 2023},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {7},
+number = {OOPSLA2},
+url = {https://doi.org/10.1145/3622827},
+doi = {10.1145/3622827},
+abstract = {Formal verification is an effective method to address the challenge of designing correct and efficient concurrent data structures. But verification efforts often ignore memory reclamation, which involves nontrivial synchronization between concurrent accesses and reclamation. When incorrectly implemented, it may lead to critical safety errors such as use-after-free and the ABA problem. Semi-automatic safe memory reclamation schemes such as hazard pointers and RCU encapsulate the complexity of manual memory management in modular interfaces. However, this modularity has not been carried over to formal verification. We propose modular specifications of hazard pointers and RCU, and formally verify realistic implementations of them in concurrent separation logic. Specifically, we design abstract predicates for hazard pointers that capture the meaning of validating the protection of nodes, and those for RCU that support optimistic traversal to possibly retired nodes. We demonstrate that the specifications indeed facilitate modular verification in three criteria: compositional verification, general applicability, and easy integration. In doing so, we present the first formal verification of Harris’s list, the Harris-Michael list, the Chase-Lev deque, and RDCSS with reclamation. We report the Coq mechanization of all our results in the Iris separation logic framework.},
+journal = {Proc. ACM Program. Lang.},
+month = oct,
+articleno = {251},
+numpages = {29},
+keywords = {Iris, safe memory reclamation, separation logic},
 selected = {true}
 }
