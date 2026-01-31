@@ -33,8 +33,11 @@ I'm a Ph.D. student at Seoul National University, <a href='https://cse.snu.ac.kr
 <br />
 <h2><a id="education">Education</a></h2>
 
-* M.S. in KAIST School of Computing, 2026 (Expected), **GPA 4.24/4.3**
-* B.S. in KAIST School of Computing, 2024, **GPA 4.24/4.3, Summa Cum Laude**
+* Ph.D. in Computer Science, Seoul National University, 2026 - Present
+    * Advised by <a href='https://sf.snu.ac.kr/gil.hur/'>Prof. Chung-Kil Hur</a>
+* M.S. in Computer Science, KAIST, 2024 - 2026
+    * Advised by <a href='https://cp.kaist.ac.kr/jeehoon.kang/'>Prof. Jeehoon Kang</a>
+* B.S. in Computer Science, KASIT, 2020 - 2024
 
 <br />
 <h2><a id="service">Academic Services</a></h2>
