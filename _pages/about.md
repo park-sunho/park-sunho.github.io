@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle:
 # <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
@@ -29,6 +29,13 @@ latest_posts:
 ---
 
 I'm a Ph.D. student at Seoul National University, <a href='https://cse.snu.ac.kr/'>Department of Computer Science and Engineering</a>.
+
+<h2><a id="contact">Contact</a></h2>
+
+* Email: sunho.park [at] sf.snu.ac.kr
+* GitHub: <a href='https://github.com/park-sunho'>park-sunho</a>
+* Bibliography: <a href='https://orcid.org/0009-0000-5380-1969'>ORCID</a>, <a href='https://scholar.google.com/citations?user=tWPkTPEAAAAJ'>Google Scholar</a>
+* Address: Room 315-1, Building 302, 1 Gwanak-ro, Gwanak-gu, Seoul, Korea (PO. 08826)
 
 <h2><a id="education">Education</a></h2>
 
